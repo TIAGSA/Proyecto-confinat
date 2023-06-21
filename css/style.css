@@ -1,0 +1,399 @@
+:root{
+    --blue-black:#181e3b;
+    --white:#fff;
+    --grey:#696969;
+    --soft-blue:#06227d;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    background: linear-gradient(325deg, #201E1C 16.69%,#333e7d 100%);
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.img-container-logo{
+    background-image: url("../assets/Img/Logo-Confinat.jpeg");
+    width: 80px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+.header-container--title{
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+    padding: 0 25px;
+}
+.header-toggle{
+    background: none;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+ .toggle-item{
+ display: inline-block;
+ width: 30px;
+ height: 30px;
+ background-image: url("../assets/icons/bars-solid.svg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ 
+}
+.header-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--blue-black);
+    width: 100%;
+    padding: 60px 0;
+    transition: .3s;
+}
+.header-nav_visible{
+    display: none;
+}
+.header-nav a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 100;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.header-nav a:hover{
+    color:#858585
+}
+.header-nav li{
+    padding: 30px 15px;
+}
+.main-hero{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ flex-direction: column;
+ height: 70vh;
+ background-image:linear-gradient(
+ 0deg,
+ rgba(0,0,0,0.5),
+ rgba(0,0,0,0.5)
+ )
+ ,url("../assets/Img/pexels-leeloo-thefirst-8962455.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ 
+}
+.main-hero h1{
+    font-size: 3rem;
+    color: #f0f2fa;
+    font-weight: 300;
+    line-height: 5rem;
+    padding: 0 5px;
+}
+.main-hero button{
+    width: 250px;
+    border-radius: 7px ;
+    border: none;
+    background: #0a1a65;
+    box-shadow: 0px 4px 8px rgba(2, 25, 92, 0.578);
+    margin-top: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.main-hero button a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding: 12px;
+}
+.main-about_us{
+background-color: #f0f2fa;
+}
+.main-about_us .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px 20px;
+}
+.about_us-text h2 {
+font-size: 3.5rem;
+color: var(--soft-blue);
+margin-bottom: 19px;
+font-weight: 500;
+}
+.about_us-text p{
+font-size: 1.3rem;
+color:var(--grey);
+font-weight: 300;
+line-height: 2rem;
+}
+.main-service{
+   background:var(--blue-black); 
+   color: #e6e9f8fa;
+}
+.main-service .container-service{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 10px;
+}
+.container-service h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.main-service--card{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 50px 10px;
+    margin: 15px auto;
+    border-radius: 10px;
+    width: 90%;
+    min-width: 288px;
+    max-width: 350px;
+}
+.main-service--card:first-child{
+  background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../assets/Img/Asesoria-co.jpg");
+    
+} 
+.main-service--card:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../assets/Img/Auditoria-y-revisoria.jpg");
+}
+.main-service--card:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../assets/Img/Outsourcing.jpg");
+}
+.main-service--card:nth-child(4){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../assets/Img/Gestion.jpg");
+}
+.main-service--card p{
+    display: none;
+}
+.main-service--card h3{
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 15px;
+}
+.main-service--card button{
+    background: #82869a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    height: 30px;
+    width: 150px;
+}
+.main-team_experencie{
+    background:#f0f2fadd;
+    padding: 100px 10px;
+}
+.container-team--title{
+   margin: 0 auto;
+   width: 90%;
+   min-width: 288px;
+   height: auto;
+   text-align: center;
+}
+.container-team--title h3{
+    font-size: 2.8rem;
+    color: var(--soft-blue);
+    font-weight: bold;
+    padding: 30px 0;
+    
+}
+.team-cards--container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow-x:scroll ;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 50px;
+}
+.team-detail--card{
+    width: 60%;
+    min-width: 200px;
+    max-width: 250px;
+    min-height: 90px;
+    margin: 15px auto;
+    padding: 15px;
+    background: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+    text-align: center;
+    scroll-snap-align: center;
+
+}
+
+.circle{
+    margin: 10px auto;
+    background-color: transparent;
+    border:3px solid var(--soft-blue);
+    height:90px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+.circle img{
+    height: 100%;
+    width: 100%;
+    clip-path: circle();
+}
+.team-detail--card h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #181e3b;
+    padding-bottom: 10px;
+}
+.team-detail--card p{
+    font-size: 1.1rem;
+    color: var(--grey);
+    font-weight: 300;
+}
+.main-contact{
+    width: 100%;
+    height: auto;
+    background: var(--blue-black);
+    padding: 100px 15px;
+}
+.main-contact--title{
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.main-contact--title h3{
+    color: #f0f2fa;
+    font-size: 2.8rem;
+    padding: 30px;
+    font-weight: 500;
+}
+.contact-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.map-container{
+   width: 300px;
+   height: 300px;
+   border: 5px solid #fff;
+   border-radius: 10px;
+   margin:0 auto;
+  
+}
+.map-container iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact-info{
+    text-align: center;
+    margin:  auto;
+    padding: 15px 0;
+}
+.contact-info ul{
+    list-style: none;
+    color: #f0f2fa;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.contact-info li{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.contact-info span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+.contact-info .location{
+    background-image: url("../assets/icons/location_on_FILL0_wght400_GRAD0_opsz48.svg")
+}
+.contact-info .email{
+    background-image: url("../assets/icons/stacked_email_FILL0_wght400_GRAD0_opsz48.svg")
+}
+.contact-info .phone{
+    background-image: url("../assets/icons/phone_in_talk_FILL0_wght400_GRAD0_opsz48.svg");
+}
+footer{
+    background: #0f0f1c;
+    width: 100%;
+    display: flex;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 140px;
+}
+footer .left ul{
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0  ;
+}
+.left a{
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.right img{
+    width: 150px;
+    height: 90px;
+}

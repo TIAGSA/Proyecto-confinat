@@ -1,0 +1,24 @@
+.header-nav{
+    flex-direction: row;
+    position: relative;
+    background: none;
+    padding: 0;
+}
+.header-toggle{
+    display: none;
+}
+.header-nav li{
+    margin: 0 auto;
+}
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.contact-info span{
+    width: 30px;
+    height: 30px;
+}
+.map-container{
+    width: 400px;
+}

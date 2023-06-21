@@ -1,0 +1,72 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container{
+    flex-direction: row;
+    margin: 0 15px;
+    padding: 8px;
+}
+.img-container-logo{
+    width: 50px;
+    height: 50px;
+}
+.header-container--title{
+    font-size: 2rem;
+}
+.header-nav{
+    padding: 0;
+    margin-right: 15px;
+}
+.main-about_us .container{
+  display: flex;
+  flex-direction: row;
+
+}
+.container .img-container{
+    background-image: url("../assets/Img/Somos-confinat.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 450px;
+    width: 40%;
+}
+.about_us-text{
+    text-align: initial;
+    width: 60%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about_us-text h2{
+    font-size: 4rem;
+}
+.about_us-text p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+.main-service .container-service{
+    flex-direction: row;
+    align-items: center;
+}
+.main-service--card button{
+    display: none;
+}
+.main-service--card p{
+    display: block;
+    color: #f0efffa8;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-bottom: 10px;
+}
+
+.team-cards--container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-cards--container{
+    gap: 0;
+    overflow-x: hidden;
+}
