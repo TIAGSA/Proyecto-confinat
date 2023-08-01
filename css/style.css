@@ -270,11 +270,13 @@ line-height: 2rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.16);
     text-align: center;
     scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .circle{
-    margin: 10px auto;
     background-color: transparent;
     border:3px solid var(--soft-blue);
     height:90px;
@@ -282,6 +284,7 @@ line-height: 2rem;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     width:90px;
+    
 }
 .circle img{
     height: 100%;
@@ -292,7 +295,7 @@ line-height: 2rem;
     font-size: 1.3rem;
     font-weight: bold;
     color: #181e3b;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 .team-detail--card p{
     font-size: 1.1rem;
